@@ -1,2 +1,2 @@
 # mywaybar
-Dotfiles alternative
+waybar alternative
