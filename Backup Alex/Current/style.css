@@ -1,0 +1,156 @@
+* {
+border: none;
+border-radius: 9999px; /* pill-shaped */
+min-height: 0;
+font-family: "JetBrainsMono Nerd Font", monospace;
+font-weight: bold;
+font-size: 14px;
+padding: 0;
+}
+
+window#waybar {
+  background: transparent;
+  border: none;
+  margin: 6px;
+}
+
+/* Tooltip */
+tooltip {
+  background-color: #1f1d2e;
+  border: 2px solid #524f67;
+  border-radius: 50px;
+
+}
+
+tooltip box {
+  padding: 20px 20px;
+}
+
+/* Common pill shape and spacing for modules including hyprland window */
+#clock,
+#tray,
+#cpu,
+#memory,
+#battery,
+#language,
+#backlight,
+#temperature,
+#custom-fans,
+#network,
+#pulseaudio,
+#custom-launcher,
+#hyprland-window {
+margin: 4px;
+padding: 4px 10px; /* slightly smaller */
+border-radius: 9999px;
+color: #FFFFFF;
+}
+
+/* Launcher */
+#custom-launcher {
+background-color: #191724;
+border: 2px solid #403d52;
+color: #FFFFFF;
+}
+
+/* Weather widget*/
+#custom-weather {
+  background-color: #191724;
+  border: 2px none #403d52;
+  margin: 4px;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  color: #FFFFFF;
+}
+
+/* Workspaces container */
+#workspaces,
+#window {
+background-color: #191724;
+margin: 4px;
+border: 2px none #403d52;
+padding: 2px 6px;
+border-radius: 9999px;
+}
+
+/* Workspace buttons */
+#workspaces button {
+all: initial;
+padding: 2px 6px;
+margin: 1px;
+color: #FFFFFF;
+border-radius: 9999px;
+font-size: 10px;
+}
+
+/* Active and urgent workspaces */
+#workspaces button.active {
+color: #eb6f92;
+}
+
+#workspaces button.urgent {
+color: #FF0000;
+}
+
+/* Individual module styles */
+#clock {
+background-color: #191724;
+border: 2px none #403d52;
+color: #FFFFFF;
+}
+
+#tray {
+background-color: #191724;
+border: none;
+
+}
+
+#battery,
+#battery.charging,
+#battery.plugged,
+#custom-fans.on {
+background-color: #191724;
+border: 2px none #a7c080;
+
+}
+
+#cpu,
+#memory,
+#network,
+#language,
+#backlight,
+#temperature,
+#pulseaudio,
+#hyprland-window {
+background-color: #191724;
+border: 2px none #403d52;
+
+}
+
+#cpu.critical,
+#memory.critical,
+#temperature.critical,
+#custom-fans.off,
+#custom-fans {
+background-color: #191724;
+border: 2px solid #eb6f92;
+
+}
+
+#battery.warning,
+#battery.critical,
+#battery.urgent {
+background-color: #191724;
+border: 2px solid #eb6f92;
+
+}
+
+#custom-gpu {
+  background-color: #191724;
+  border: 2px none #403d52;
+  margin: 4px;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  color: #FFFFFF;
+}
+
