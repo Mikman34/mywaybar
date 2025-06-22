@@ -1,2 +1,2 @@
-# myhyprland2
+# mywaybar
 Dotfiles alternative
