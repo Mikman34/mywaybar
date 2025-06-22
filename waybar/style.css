@@ -94,7 +94,7 @@ color: #FF0000;
 
 /* Individual module styles */
 #clock {
-background-color: #f5c2e7;
+background-color: #ca9ee6;
 border: 2px none #403d52;
 color: #191724;
 }
@@ -148,7 +148,7 @@ color: #191724;
 
 
 #custom-gpu {
-  background-color: #ca9ee6;
+  background-color: #f5c2e7; 
  /* border: 3px solid #313244; */
   margin: 4px;
   padding: 4px 10px;
