@@ -4,9 +4,10 @@
   "modules-left": [
     //"custom/launcher",
     "hyprland/workspaces",
-    "hyprland/window", 
+    "hyprland/window",
+    "custom/media"
     ],
- 
+
   "modules-center": ["clock", "custom/weather", "tray"],
   "modules-right": [
     "cpu",
@@ -72,7 +73,7 @@
     "spacing": 5,
   },
 
-  
+
 
   "pulseaudio": {
     "format": "{icon} {volume}%",
@@ -104,7 +105,7 @@
     "tooltip-format": "{ifname}: {ipaddr}",
   },
 
-  
+
   "cpu": {
     //"format": "󰍛 {usage}%",
     "format": "<span color='#191724'>󰍛</span> {usage}%",
@@ -125,6 +126,5 @@
     "interval": 1,
   },
 
- 
-}
 
+}

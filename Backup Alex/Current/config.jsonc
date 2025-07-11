@@ -4,29 +4,22 @@
   "modules-left": [
     //"custom/launcher",
     "hyprland/workspaces",
-    "hyprland/window",
-    //"hyprland/language",
-    //"hyprland/window",
-    "temperature",
-
-
-  ],
+    "hyprland/window", 
+    ],
+ 
   "modules-center": ["clock", "custom/weather", "tray"],
   "modules-right": [
-    "custom/fans",
-    "backlight",
     "cpu",
     "custom/gpu",
     "memory",
     "pulseaudio",
     "network",
-    "battery",
-  ],
+     ],
 
  "custom/launcher":{
-      "format": " ",
-      "on-click": "fuzzel",
-      "on-click-right": "killall fuzzel"
+      "format": "<span color='#1793d1'> </span>",
+      "on-click": "/home/alex/.config/hypr/scripts/toggle_wofi.sh",
+      //"on-click-right": "killall fuzzel"
     },
 
   "hyprland/workspaces": {
@@ -34,7 +27,7 @@
     "on-scroll-up": "hyprctl dispatch workspace e-1",
     "on-scroll-down": "hyprctl dispatch workspace e+1",
     "persistent-workspaces": {
-      "*": 4, // 5 workspaces by default on every monitor
+      "*": 4, // 4 workspaces by default on every monitor
     },
   },
 
@@ -45,7 +38,7 @@
 
   "clock": {
     //"on-click": "gsimplecal",
-    "format": "<span color='#ffcb6b'>󰥔</span> {:%H:%M | <span color='#c4a7e7'>󰃮</span> %A, %d %B}",
+    "format": "<span color='#191724'>󰥔</span> {:%H:%M | <span color='#191724'>󰃮</span> %A, %d %B}",
     //"format": "{:󰃮 %A, %d %B | 󰥔 %H:%M}",
     //"format-alt": "󰃮 {:%A, %d %B}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>",
@@ -66,12 +59,12 @@
     },
   },
 
-  "custom/weather": {
-  "exec": "~/.config/hypr/scripts/weather.sh",
-  "interval": 900,
-  "format": "<span color='#c4a7e7'></span> {}",
-  "tooltip": true
-},
+// "custom/weather": {
+// "exec": "~/.config/hypr/scripts/weather.sh",
+// "interval": 900,
+//  "format": "<span color='#c4a7e7'></span> {}",
+//  "tooltip": true
+//},
 
 
   "tray": {
@@ -79,12 +72,7 @@
     "spacing": 5,
   },
 
-  "backlight": {
-    "format": "{icon} {percent}%",
-    "format-icons": ["󰃞", "󰃟", "󰃠"],
-    "on-click": "brightnessctl set +5%",
-    "on-click-right": "brightnessctl set 5%-",
-  },
+  
 
   "pulseaudio": {
     "format": "{icon} {volume}%",
@@ -109,64 +97,34 @@
   "network": {
     "format-wifi": "󰖩 {essid} {signalStrength}%",
     //"format-ethernet": "󰈀 {ipaddr}",
-    "format-ethernet": "<span color='#7CCD7F'>󰈀</span> {ipaddr}",
+    "format-ethernet": "<span color='#191724'>󰈀</span> {ipaddr}",
     //"format-linked": "󰈀 {ifname} (No IP)",
     "format-disconnected": "󰖪 Disconnected",
     "format-alt": "{ifname}: {ipaddr}/{cidr}",
     "tooltip-format": "{ifname}: {ipaddr}",
   },
 
-  "battery": {
-    "states": {
-      "good": 95,
-      "warning": 30,
-      "critical": 15,
-    },
-    "format": "{icon} {capacity}%",
-    "format-charging": "󰂄 {capacity}%",
-    "format-plugged": "󰚥 {capacity}%",
-    "format-alt": "{icon} {time}",
-    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
-  },
-
+  
   "cpu": {
     //"format": "󰍛 {usage}%",
-    "format": "<span color='#c4a7e7'>󰍛</span> {usage}%",
+    "format": "<span color='#191724'>󰍛</span> {usage}%",
     "tooltip": true,
     "interval": 1,
   },
 
   "custom/gpu": {
   "exec": "/home/alex/.config/hypr/scripts/gpucheck.sh",
-  "format": "<span color='#a7c080'>󰍛</span> {}",
+  "format": "<span color='#191724'>󰍛</span> {}",
   "return-type": "json",
-  "interval": 2
+  "interval": 1
   },
 
   "memory": {
     //"format": " {}%",
-    "format": "<span color='#ffcb6b'>󰘚</span> {}%",
+    "format": "<span color='#191724'>󰘚</span> {}%",
     "interval": 1,
   },
 
-  "temperature": {
-    "hwmon-path": "/sys/devices/platform/PNP0C14:02/wmi_bus/wmi_bus-PNP0C14:02/F1DDEE52-063C-4784-A11E-8A06684B9B01/hwmon/hwmon5/temp1_input",
-    "critical-threshold": 80,
-    "format": "{icon} {temperatureC}°C",
-    "format-icons": ["󱃃", "󰔏", "󱃂"],
-  },
-
-  "custom/fans": {
-    "exec": "/home/kaezr/dotfiles/scripts/fancheck.sh",
-    "format": "Fans {icon} ",
-    "format-icons": {
-      "on": "",
-      "off": "󰠝",
-    },
-    "on-click": "sudo /home/kaezr/dotfiles/scripts/cool.sh on",
-    "on-click-right": "sudo /home/kaezr/dotfiles/scripts/cool.sh off",
-    "interval": 5,
-    "return-type": "json",
-  }, 
-
+ 
 }
+

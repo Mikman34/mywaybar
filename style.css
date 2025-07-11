@@ -11,23 +11,23 @@ padding: 0;
 }
 
 window#waybar {
-  background: #24273a;
-  /* background: transparent; */
-  border: none;
-  border-radius: 0px;
-  margin: 6px;
+    background: #24273a;
+    /* background: transparent; */
+    border: none;
+    border-radius: 0px;
+    margin: 6px;
 }
 
 /* Tooltip */
 tooltip {
-  background-color: #1f1d2e;
-  border: 2px solid #524f67;
-  border-radius: 50px;
+    background-color: #1f1d2e;
+    border: 2px solid #524f67;
+    border-radius: 50px;
 
 }
 
 tooltip box {
-  padding: 20px 20px;
+    padding: 20px 20px;
 }
 
 /* Common pill shape and spacing for modules including hyprland window */
@@ -55,12 +55,12 @@ color: #FFFFFF;
 
 /* Weather widget*/
 #custom-weather {
-  background-color: #191724;
-  border: 2px none #403d52;
-  margin: 4px;
-  padding: 4px 10px;
-  border-radius: 9999px;
-  color: #FFFFFF;
+background-color: #191724;
+border: 2px none #403d52;
+margin: 4px;
+padding: 4px 10px;
+border-radius: 9999px;
+color: #FFFFFF;
 }
 
 /* Workspaces container */
@@ -117,13 +117,13 @@ border: none;
 
 /* #cpu, */
 /* #memory, */
-/* #network, */ 
+/* #network, */
 #language,
-/* #pulseaudio,*/ 
+/* #pulseaudio,*/
 #hyprland-window {
 background-color: #ed8796;
 border: 2px none #403d52;
-color:  #191724; 
+color:  #191724;
 
 }
 
@@ -157,11 +157,10 @@ color: #191724;
 
 
 #custom-gpu {
-  background-color: #f5c2e7; 
- /* border: 3px solid #313244; */
-  margin: 4px;
-  padding: 4px 10px;
-  border-radius: 9999px;
-  color: #191724;
+background-color: #f5c2e7;
+/* border: 3px solid #313244; */
+margin: 4px;
+padding: 4px 10px;
+border-radius: 9999px;
+color: #191724;
 }
-
